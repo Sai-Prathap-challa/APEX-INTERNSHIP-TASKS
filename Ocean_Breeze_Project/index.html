@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ocean Breeze Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <header class="fade-in">
+    <h1>Ocean Breeze Dashboard</h1>
+    <p>Your personal productivity + contact portal</p>
+  </header>
+
+  <nav class="navbar slide-in-left">
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#todo">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-grid">
+    <section class="card fade-in-up" id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="card fade-in-up delay" id="todo">
+      <h2>📝 To-Do List</h2>
+      <div class="todo-controls">
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer class="fade-in-up delay-2">
+    <p>© 2025 Ocean Breeze Portal | Designed by Prathap</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
