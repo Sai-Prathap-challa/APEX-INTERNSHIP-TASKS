@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Dashboard | Task 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>🌐 ApexPlanet Interactive Dashboard</h1>
+    <p>Responsive design, interactivity & real-time data</p>
+  </header>
+
+  <div class="dashboard">
+    <!-- Quiz Card -->
+    <div class="card quiz-question">
+      <h2>🧠 Quiz Time!</h2>
+      <p id="question">What is the capital of France?</p>
+      <button onclick="checkAnswer('Paris')">Paris</button>
+      <button onclick="checkAnswer('London')">London</button>
+      <p id="quiz-result"></p>
+    </div>
+
+    <!-- Image Carousel Card -->
+    <div class="card carousel">
+      <h2>🖼️ Image Carousel</h2>
+      <img id="carousel-image" src="" alt="carousel image">
+    </div>
+
+    <!-- API Card -->
+    <div class="card api-data">
+      <h2>🌤️ Joke of the Moment</h2>
+      <p id="joke">Click the button below to fetch a joke.</p>
+      <button onclick="fetchJoke()">Get Joke</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
